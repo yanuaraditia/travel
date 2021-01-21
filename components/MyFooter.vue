@@ -1,0 +1,71 @@
+<template>
+    <footer class="footer">
+        <b-container class="py-lg-4">
+            <b-row>
+                <b-col>
+                    <ul>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                    </ul>
+                </b-col>
+                <b-col>
+                    <ul>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                    </ul>
+                </b-col>
+                <b-col>
+                    <ul>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                    </ul>
+                </b-col>
+                <b-col>
+                    <ul>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                    </ul>
+                </b-col>
+                <b-col>
+                    <ul>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                    </ul>
+                </b-col>
+            </b-row>
+            <hr>
+            <b-row>
+                <b-col>© {{new Date().getFullYear()}} Sinode, All right reserved</b-col>
+                <b-col class="d-lg-flex justify-content-lg-end">
+                    <a href="#">Indonesia</a>
+                    <a href="#">Rp. Rupiah</a>
+                </b-col>
+            </b-row>
+        </b-container>
+    </footer>
+</template>
