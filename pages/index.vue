@@ -1,16 +1,18 @@
 <template>
-  <section class="front-banner">
-    <div class="front-banner-bg coraid-lg mx-auto">
-      <img src="~/assets/front-banner.jpg" alt="">
-    </div>
-    <b-container class="position-relative">
-      <div class="px-lg-5">
-        <h1 class="text-white focus is-1">The quickest & easiest online video editor for any team</h1>
-        <b-button size="lg" variant="primary">Try for free</b-button>
-        <b-button size="lg" variant="lighter" class="ml-lg-2">Watch video</b-button>
+  <div>
+    <section class="front-banner">
+      <div class="front-banner-bg coraid-lg mx-auto">
+        <img src="~/assets/front-banner.jpg" alt="" v-bind:style="{'transform' : `translateY(-${random_axis}px)`}">
       </div>
-    </b-container>
-  </section>
+      <b-container class="position-relative">
+        <div class="px-lg-5">
+          <h1 class="text-white focus is-1">The quickest & easiest online video editor for any team</h1>
+          <b-button size="lg" variant="primary">Try for free</b-button>
+          <b-button size="lg" variant="lighter" class="ml-lg-2">Watch video</b-button>
+        </div>
+      </b-container>
+    </section>
+  </div>
 </template>
 
 <style lang="scss">
@@ -66,4 +68,33 @@
     }
   }
 }
+
 </style>
+<script>
+export default {
+  data() {
+    return {
+      random_axis: 0
+    }
+  },
+  methods: {
+    scrolled() {
+      const offset_max = document.getElementsByClassName('coraid-lg')[0].getBoundingClientRect().bottom;
+      const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
+      if (currentScrollPosition <= offset_max) {
+        this.random_axis = currentScrollPosition + 10;
+      } else {
+        this.random_axis = offset_max
+      }
+    }
+  },
+  mounted () {
+    this.onScroll
+    window.addEventListener('scroll', this.scrolled)
+  },
+  beforeDestroy () {
+    window.removeEventListener('scroll', this.scrolled)
+  }
+
+}
+</script>

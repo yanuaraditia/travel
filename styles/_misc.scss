@@ -35,3 +35,23 @@ p {
   backdrop-filter: blur(5px);
   color: $white!important;
 }
+
+@media (max-width: 1200px) {
+  h2 {
+    font-size: calc(1.4375rem + 1.75vw);
+  }
+}
+.text-tiny {
+  font-size: 0.875rem;
+  line-height: 1.43;
+}
+a.link-arrow {
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none !important;
+  transition: color 0.2s ease-in-out 0s, background-color 0.2s ease-in-out 0s, border 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+  cursor: pointer;
+  img {
+    margin-left: 5px;
+  }
+}
