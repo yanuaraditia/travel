@@ -42,6 +42,10 @@ p {
   background: rgba($color: #d0deff, $alpha: .25) !important;
   backdrop-filter: blur(5px);
   color: $white !important;
+  &:hover, &:focus {
+    background: #fff!important;
+    color: $dark !important;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -65,4 +69,16 @@ a.link-arrow {
   img {
     margin-left: 5px;
   }
+}
+.btn {
+  i {
+    font-size: 12px;
+    padding-right: 12px;
+  }
+}
+hr.dash {
+  width: 200px;
+  height: 1px;
+  margin: 20px 0;
+  border-top: 1px dashed #cdcdcd;
 }
