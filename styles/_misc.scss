@@ -1,12 +1,37 @@
 .grotesk {
-    font-family: $font-family-grotesk;
+  font-family: $font-family-grotesk;
 }
 .content-wrapper {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 .coraid {
-    border-radius: 2rem;
+  border-radius: 2rem;
+  @media screen {
+    &-lg {
+      border-radius: 2rem;
+    }
+  }
 }
 .focus {
-    max-width: 30vw;
+    max-width: 50vw;
+}
+.scopus {
+  @media screen and (min-width: 1023px) {
+    max-width: 50vw;
+  }
+}
+h1 {
+  font-size: 3.5rem;
+}
+.trotesk {
+  line-height: 1.14;
+  letter-spacing: -1.5px;
+}
+p {
+  font-size: 1.125rem;
+}
+.btn-lighter {
+  background: rgba($color: #d0deff, $alpha: .25)!important;
+  backdrop-filter: blur(5px);
+  color: $white!important;
 }

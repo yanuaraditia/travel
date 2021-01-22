@@ -1,17 +1,13 @@
 <template>
   <section class="front-banner">
-    <div class="front-banner-bg coraid mx-auto">
+    <div class="front-banner-bg coraid-lg mx-auto">
       <img src="~/assets/front-banner.jpg" alt="">
     </div>
     <b-container class="position-relative">
-      <div class="px-lg-4">
-        <h1 class="text-white grotesk focus is-1">Find the good out there.</h1>
-        <div class="form-group searcher">
-          <label for="">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          </label>
-          <input type="text" placeholder="Which one?" class="form-control">
-        </div>
+      <div class="px-lg-5">
+        <h1 class="text-white focus is-1">The quickest & easiest online video editor for any team</h1>
+        <b-button size="lg" variant="primary">Try for free</b-button>
+        <b-button size="lg" variant="lighter" class="ml-lg-2">Watch video</b-button>
       </div>
     </b-container>
   </section>
@@ -22,13 +18,13 @@
   position: relative;
   overflow: hidden;
   @media screen and (min-width: 1024px) {
-    height: 80vh;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   @media screen and (max-width: 1023px) {
-    height: 80vh;    
+    height: 80vh;
   }
   &-bg {
     position: absolute;

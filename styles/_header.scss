@@ -1,8 +1,10 @@
 .navbar {
-    z-index: 9999;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: rgba($color: #fff, $alpha: .75);
-    backdrop-filter: blur(10px);
+  z-index: 9999;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #ffffff;
+}
+.scrolled {
+  box-shadow: 60px 40px 60px 0 rgba(19, 23, 32, 0.1);
 }

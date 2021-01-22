@@ -1,7 +1,9 @@
-$font-family-sans-serif: 'Roboto',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif: 'CircularStd',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-grotesk: 'Space Grotesk',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 
-$primary: #ff385c;
+$primary: #0055fb;
+$dark: #111;
+$white: #fff;
 
 $container-max-widths: (
   sm: 540px,
@@ -9,3 +11,24 @@ $container-max-widths: (
   lg: 1120px,
   xl: 1270px
 );
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1120px,
+  xl: 1270px
+) !default;
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-weight-bold:            900 !default;
+$h1-font-size:                $font-size-base * 3.5 !default;
+$h2-font-size:                $font-size-base * 2.75 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+
+$btn-padding-x-lg: 25px;
+$btn-padding-y-lg: 17px;
+$btn-border-radius-lg: 11px;
