@@ -1,9 +1,11 @@
 .grotesk {
   font-family: $font-family-grotesk;
 }
+
 .content-wrapper {
   margin-top: 3rem;
 }
+
 .coraid {
   border-radius: 2rem;
   @media screen {
@@ -12,28 +14,34 @@
     }
   }
 }
+
 .focus {
-    max-width: 50vw;
+  max-width: 50vw;
 }
+
 .scopus {
   @media screen and (min-width: 1023px) {
     max-width: 50vw;
   }
 }
+
 h1 {
   font-size: 3.5rem;
 }
+
 .trotesk {
   line-height: 1.14;
   letter-spacing: -1.5px;
 }
+
 p {
   font-size: 1.125rem;
 }
+
 .btn-lighter {
-  background: rgba($color: #d0deff, $alpha: .25)!important;
+  background: rgba($color: #d0deff, $alpha: .25) !important;
   backdrop-filter: blur(5px);
-  color: $white!important;
+  color: $white !important;
 }
 
 @media (max-width: 1200px) {
@@ -41,16 +49,19 @@ p {
     font-size: calc(1.4375rem + 1.75vw);
   }
 }
+
 .text-tiny {
   font-size: 0.875rem;
   line-height: 1.43;
 }
+
 a.link-arrow {
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none !important;
   transition: color 0.2s ease-in-out 0s, background-color 0.2s ease-in-out 0s, border 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
   cursor: pointer;
+
   img {
     margin-left: 5px;
   }
