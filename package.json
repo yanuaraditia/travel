@@ -9,7 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/axios": "^5.13.1",
     "@nuxtjs/pwa": "^3.0.2",
     "axios": "^0.21.1",
     "bootstrap": "^4.5.2",
