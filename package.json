@@ -20,6 +20,6 @@
     "sass-loader": "^10.1.1"
   },
   "devDependencies": {
-    "@nuxt/types": "~2.14.0"
+    "@nuxt/types": "~2.15.0"
   }
 }
